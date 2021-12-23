@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(45, 27, 204);
+            color: white;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM  </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+    <div id="msg" >Clique em mim</div>
+    <script>
+
+     /* window.document.write(window.document.charset) // caracteres do navegador
+      window.document.write(window.navigator.appName) //saber o navegador
+      window.document.write(window.document.URL)
+      */
+     var corpo = window. document.body
+     var p1 = window.document.getElementsByTagName('p') [1]
+     /*window.document.write('Está escrito assim: ' + p1.innerHTML) // o innerText pega somente o texto. O innerHTML pela o texto com a formatação dele. 
+     var d = window.document.getElementById('msg')
+     d.style.background = 'green' // mudar a cor
+     d.innerText = 'Estou aguardando'*/
+     var d = window.document.querySelector('div#msg')
+     d.style.color = 'black'
+     d.style.background = 'green'
+
+    </script>
+</body>
+</html>
