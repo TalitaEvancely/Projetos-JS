@@ -1,20 +1,17 @@
-function país() 
+
+
+function verificar() 
         {
-            var txtv = window.document.querySelector('input#txtpaís')
-            var resp = window.document.querySelector('div#p')
-            var país = (país.value)
-            //res.innerHTML = `<p>Seu país é <strong> ${pais} </strong> </p>`
-             //console.log(`Vivendo no ${país}`)
-            if (país=='Brasil'){
-                console.log(`você é brasileiro`)
+          var ps = document.querySelector('#txtpais')
+          var ps2 = ps.value
+          var resp = document.getElementById('p')
+          
+              if (ps2 =='Brasil' || ps2 == 'brasil' )
+              {
+                resp.textContent = 'Você é brasileiro'
             }
             else{
-                console.log(`você é estrangeiro`)
+              resp.textContent = 'você é estrageiro'
                 }
-            /*if (país = Brasil) {
-                res.innerHTML = `<p> Você é <strong> Brasileiro </strong> </p>`
-            }
-            else {
-                resp.innerHTML = `<p> Você é <strong> Estrangeiro </strong> </p>`
-            }*/
+           
         }
