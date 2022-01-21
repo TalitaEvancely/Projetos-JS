@@ -19,7 +19,7 @@ function verificar () {
      var num2=Number(n2.value) 
     //1a parte:
     if (num1==num2){
-        document.write(`${num1} e ${num2} são . `)
+        document.write(`${num1} e ${num2} são iguais. `)
     } else{
         document.write(`${num1} e ${num2} não são iguais.`)
     }
